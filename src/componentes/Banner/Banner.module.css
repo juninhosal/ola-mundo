@@ -13,7 +13,7 @@
     margin-bottom: 2rem;
 }
 
-.paragrafo {
+.paragrafo .ul .li{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     line-height: 2rem;

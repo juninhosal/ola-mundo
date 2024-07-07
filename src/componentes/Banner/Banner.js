@@ -7,13 +7,29 @@ export const Banner = () =>{
         <div className={styles.banner}>
             <div>
                 <h1 className={styles.titulo}>
-                    Olá, Mundo!
+                    Saudação terráqueo! Sou o Junior Salgado 🖖
                 </h1>
                 <p className={styles.paragrafo}>
-                    Boas vindas ao meu espaço pessoal! Eu sou Antônio Evaldo,
-                    instrutor de Front-end da Alura.
-                    Aqui compartilho vários conhecimentos,
-                    espero que aprenda algo novo :)
+                    <ul>
+                        <li>
+                            📚 Graduado em Ciência da Computação na UNIP (2020)
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            🗲 Entusiasta em artes geradas por inteligencia artificial ( Stable Diffusion )
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            💓 Animes, Filmes (Quadrinhos, Ficção científica, Fantasia, mistérios e Terror), livros (Ficção científica e Fantasia).🤓
+                        </li>
+                    </ul>
+                    <ul>S
+                        <li>
+                            💤 Conhecer outros países principalmente o Japão e Canadá.
+                        </li>
+                    </ul>
                 </p>
             </div>
 
