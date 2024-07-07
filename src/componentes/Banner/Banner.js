@@ -41,7 +41,10 @@ export const Banner = () =>{
                 />
                 <img
                     className={styles.minhaFoto}
-                    src={minhaFoto}
+                    src={'https://github.com/juninhosal.png'}
+                    onError={(e) => {
+                        e.target.src = minhaFoto;
+                    }}
                     alt={"Foto de Paulo de Tarso Salgado Junior"}
                 />
             </div>
