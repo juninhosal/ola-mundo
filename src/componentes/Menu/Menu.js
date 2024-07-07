@@ -1,5 +1,5 @@
-import './Menu.css'
-import {Link} from "react-router-dom";
+import styles from './Menu.module.css';
+import {NavLink} from "react-router-dom";
 
 export const Menu = () => {
     const  menu = {
@@ -11,11 +11,20 @@ export const Menu = () => {
 
     return(
         <header>
-            <nav className="navegacao">
+            <nav className={styles.navegacao}>
                 {menuItems.map((menu, index) => (
-                    <Link key={index} className="link" to={menuLinks[index]}>
+                    <NavLink
+                        key={index}
+                        className={
+                        ({ isActive }) => `
+                            ${styles.link} 
+                            ${isActive ? styles.linkDestacado : ''}
+                        `}
+                        to={menuLinks[index].trim()}
+                        end
+                    >
                         {menu}
-                     </Link>
+                    </NavLink>
                     ))}
             </nav>
         </header>

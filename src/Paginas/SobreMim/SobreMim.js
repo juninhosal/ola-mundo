@@ -1,5 +1,10 @@
+import Banner from "componentes/Banner";
+
 export const SobreMim = () => {
     return(
-        <h1>Sobre Mim...</h1>
+        <main>
+            <Banner />
+            <h1>Sobre Mim...</h1>
+        </main>
     )
 }
