@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "menu": "Inicio",
+    "url":"/",
+    "component":"Inicio"
+  },
+  {
+    "id": 1,
+    "menu": "Sobre Mim",
+    "url":"sobremim",
+    "component":"SobreMim"
+  }
+]

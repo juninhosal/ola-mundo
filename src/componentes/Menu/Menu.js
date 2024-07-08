@@ -1,32 +1,26 @@
 import styles from './Menu.module.css';
 import {NavLink} from "react-router-dom";
-
+import FormatarMenu from "json/menu.json"
 export const Menu = () => {
-    const  menu = {
-        menus: 'Inicio,Sobre Mim',
-        links: '/,/sobremim'
-    }
-    const menuItems = menu.menus.split(',')
-    const menuLinks = menu.links.split(',')
-
     return(
         <header>
             <nav className={styles.navegacao}>
-                {menuItems.map((menu, index) => (
+                {FormatarMenu.filter(menu => menu.menu).map(menu =>(
                     <NavLink
-                        key={index}
+                        key={menu.id}
                         className={
                         ({ isActive }) => `
                             ${styles.link} 
                             ${isActive ? styles.linkDestacado : ''}
                         `}
-                        to={menuLinks[index].trim()}
+                        to={menu.url}
                         end
                     >
-                        {menu}
+                        {menu.menu}
                     </NavLink>
                     ))}
             </nav>
         </header>
     )
 }
+
